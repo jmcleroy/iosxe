@@ -1,7 +1,7 @@
 ---
 - name: run prechecks
   hosts: all
-  connection: local
+  connection: network_cli
   gather_facts: no
 
   roles:
