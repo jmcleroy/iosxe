@@ -6,5 +6,5 @@
 
 - name: Remove NTP Server
   ios_config:
-    lines: no vlan{{ ntp_ip }}
+    lines: no ntp server {{ ntp_ip }}
   when: input_state == 'remove'
