@@ -1,12 +1,11 @@
 ---
-tasks:
-  - name: gather ios_facts
-    ios_facts:
-    register: version
+- name: gather ios_facts
+  ios_facts:
+  register: version
 
-  - debug:
-      msg: "{‌{version}}"
+- debug:
+    msg: "{‌{version}}"
 
-  - name: Backup configuration
-    ios_config:
-      backup: yes
+- name: Backup configuration
+  ios_config:
+    backup: yes
