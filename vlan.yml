@@ -1,0 +1,8 @@
+---
+- name: run prechecks
+  hosts: all
+  connection: local
+  gather_facts: no
+
+  roles:
+    - vlan

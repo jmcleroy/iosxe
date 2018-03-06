@@ -1,0 +1,14 @@
+---
+tasks:
+  - name: show version
+    ios_command:
+      commands: show version
+      wait_for: results[0] contains IOS
+
+
+  - name: run multiple commands and evaluate the output
+    ios_command:
+      commands:
+        - show interfaces
+      wait_for:
+        - result[1] contains Loopback0
