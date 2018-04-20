@@ -1,5 +1,5 @@
 ---
-- name: backup router configurations
+- name: check the running config against startup config
   hosts: all
   connection: local
   gather_facts: no
