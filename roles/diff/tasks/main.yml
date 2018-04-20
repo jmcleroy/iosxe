@@ -2,4 +2,6 @@
 - name: check the startup-config against the running-config
   ios_config:
     diff_against: startup
-    diff_ignore_lines: crypto pki certificate chain TP-self-signed-340284155 *
+    diff_ignore_lines:
+      - crypto pki certificate chain TP-self-signed-340284155 *
+      - certificate self-signed 01 *
