@@ -5,3 +5,4 @@
     diff_ignore_lines:
       - crypto pki certificate chain TP-self-signed-340284155 *
       - certificate self-signed 01 *
+      - 3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 *
