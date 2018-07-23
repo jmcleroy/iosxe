@@ -1,0 +1,8 @@
+---
+- name: check interface is up and processing traffic
+  hosts: all
+  connection: local
+  gather_facts: no
+
+  roles:
+    - interface_state
