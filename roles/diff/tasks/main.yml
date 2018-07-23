@@ -2,8 +2,3 @@
 - name: check the startup-config against the running-config
   ios_config:
     diff_against: startup
-- name: Config + intent
-  net_interface:
-    name: fxp0
-    enabled: False
-    state: down
