@@ -1,6 +1,6 @@
 ---
 - name: Config + intent
   net_interface:
-    name: gigabitethernet 0/2
+    name: "gigabitEthernet 0/2"
     enabled: true
     state: up
